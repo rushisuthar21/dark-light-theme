@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <h1> Select Any theme</Select></h1>
+        <meta name="color-scheme" content="Light">
+    </head>
+    <body>
+        <select id ="theme" onchange="switchtheme()">
+            <option value="Light">Light</option>
+            <option value="Dark">Dark</option>
+
+        </select>
+        <script>
+            
+    function switchtheme(){
+    const theme = document.getElementById("theme").value;
+        document.getElementsByTagName("meta")[0].content = theme;}
+        </script>
+    </body>
+</html>
